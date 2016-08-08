@@ -1,0 +1,25 @@
+$(call inherit-product, device/lge/d850/full_d850.mk)
+
+# Include PAC common configuration
+include vendor/pac/config/common_full_phone.mk
+
+# Enhanced NFC
+$(call inherit-product, vendor/pac/config/nfc_enhanced.mk)
+
+PRODUCT_DEVICE := pac_d850
+PRODUCT_NAME := pac_d850
+PRODUCT_BRAND := lge
+PRODUCT_MODEL := LG-D850
+PRODUCT_MANUFACTURER := LGE
+
+# Bootanimation
+PAC_BOOTANIMATION_NAME := 1440
+
+TARGET_SCREEN_ASPECT_RATIO := 16by9
+SCREEN_RATIO_PROPORTIONATE := true
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_DEVICE="g3" \
+    PRODUCT_NAME="g3_att_us" \
+    BUILD_FINGERPRINT="lge/g3_att_us/g3:4.4.2/KVT49L.D85010d/D85010d.1403173065:user/release-keys" \
+    PRIVATE_BUILD_DESC="g3_att_us-user 4.4.2 KVT49L.D85010d D85010d.1403173065 release-keys"
