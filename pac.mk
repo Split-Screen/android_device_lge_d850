@@ -6,7 +6,7 @@ include vendor/pac/config/common_full_phone.mk
 # Enhanced NFC
 $(call inherit-product, vendor/pac/config/nfc_enhanced.mk)
 
-PRODUCT_DEVICE := pac_d850
+PRODUCT_DEVICE := d850
 PRODUCT_NAME := pac_d850
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-D850
